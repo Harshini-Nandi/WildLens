@@ -1,0 +1,32 @@
+{
+  "name": "wildbuddy",
+  "version": "1.0.0",
+  "description": "WildBuddy — Offline-First Open-Source AI Nature Companion",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"yellow.bold,green.bold\" \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "build": "npm run build --workspace=server && npm run build --workspace=client",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vitest": "^3.0.5"
+  },
+  "keywords": [
+    "wildbuddy",
+    "ollama",
+    "offline-first",
+    "pwa",
+    "nature",
+    "ai",
+    "open-source"
+  ],
+  "author": "WildBuddy Team",
+  "license": "MIT"
+}

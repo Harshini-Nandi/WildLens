@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5EB"/>
+      <stop offset="60%" stop-color="#EEF4EA"/>
+      <stop offset="100%" stop-color="#DCE8D5"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E19978"/>
+      <stop offset="100%" stop-color="#C77B57"/>
+    </linearGradient>
+    <linearGradient id="mountainBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B8CDB0"/>
+      <stop offset="100%" stop-color="#8EA685"/>
+    </linearGradient>
+    <linearGradient id="mountainFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E7356"/>
+      <stop offset="100%" stop-color="#245C45"/>
+    </linearGradient>
+    <linearGradient id="forestGround" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#245C45"/>
+      <stop offset="100%" stop-color="#173D30"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" rx="24" fill="url(#skyGrad)"/>
+
+  <!-- Morning Sun -->
+  <circle cx="560" cy="180" r="70" fill="url(#sunGrad)" opacity="0.85"/>
+  <circle cx="560" cy="180" r="95" fill="#C77B57" opacity="0.15"/>
+
+  <!-- Distant Birds -->
+  <path d="M220 120 Q230 110 240 120 Q250 110 260 120" stroke="#4A5B51" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M255 105 Q262 97 270 105 Q278 97 285 105" stroke="#4A5B51" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <path d="M190 135 Q197 127 205 135 Q213 127 220 135" stroke="#4A5B51" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Far Mountains -->
+  <polygon points="120,380 280,190 420,380" fill="url(#mountainBack)" opacity="0.7"/>
+  <polygon points="340,380 490,210 630,380" fill="url(#mountainBack)" opacity="0.6"/>
+
+  <!-- Mid Mountains -->
+  <polygon points="0,420 180,240 360,420" fill="#2E7356" opacity="0.85"/>
+  <polygon points="460,420 620,260 780,420" fill="#245C45" opacity="0.9"/>
+
+  <!-- Rolling Hills -->
+  <path d="M-20 380 Q200 320 400 360 T820 340 L820 500 L-20 500 Z" fill="url(#mountainFront)"/>
+  <path d="M-20 400 Q260 370 520 410 T820 390 L820 500 L-20 500 Z" fill="url(#forestGround)"/>
+
+  <!-- Stylized Pine Trees Foreground -->
+  <g fill="#173D30">
+    <!-- Tree 1 -->
+    <polygon points="90,320 75,350 105,350"/>
+    <polygon points="90,340 70,375 110,375"/>
+    <polygon points="90,365 65,405 115,405"/>
+    <rect x="87" y="405" width="6" height="25" fill="#4A5B51"/>
+
+    <!-- Tree 2 -->
+    <polygon points="150,300 130,335 170,335"/>
+    <polygon points="150,325 125,365 175,365"/>
+    <polygon points="150,355 120,400 180,400"/>
+    <rect x="146" y="400" width="8" height="30" fill="#4A5B51"/>
+
+    <!-- Tree 3 -->
+    <polygon points="680,290 660,330 700,330"/>
+    <polygon points="680,320 655,365 705,365"/>
+    <polygon points="680,350 650,400 710,400"/>
+    <rect x="676" y="400" width="8" height="32" fill="#4A5B51"/>
+
+    <!-- Tree 4 -->
+    <polygon points="730,330 715,365 745,365"/>
+    <polygon points="730,355 710,395 750,395"/>
+    <rect x="727" y="395" width="6" height="20" fill="#4A5B51"/>
+  </g>
+
+  <!-- Winding Trail -->
+  <path d="M400 500 C390 470 410 440 370 410 C340 388 350 370 330 350" fill="none" stroke="#DCE8D5" stroke-width="12" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Flora / Wildflowers -->
+  <g>
+    <!-- Terracotta flower 1 -->
+    <circle cx="280" cy="445" r="5" fill="#C77B57"/>
+    <path d="M280 445 L280 465" stroke="#DCE8D5" stroke-width="2"/>
+    <circle cx="310" cy="455" r="4.5" fill="#E19978"/>
+    <path d="M310 455 L310 470" stroke="#DCE8D5" stroke-width="2"/>
+
+    <!-- Soft flowers -->
+    <circle cx="480" cy="450" r="6" fill="#F7F5EB"/>
+    <circle cx="480" cy="450" r="2.5" fill="#C77B57"/>
+    <path d="M480 450 L480 475" stroke="#DCE8D5" stroke-width="2"/>
+
+    <circle cx="520" cy="440" r="5" fill="#C77B57"/>
+    <path d="M520 440 L520 460" stroke="#DCE8D5" stroke-width="2"/>
+
+    <circle cx="230" cy="460" r="4" fill="#F7F5EB"/>
+    <path d="M230 460 L230 475" stroke="#DCE8D5" stroke-width="1.5"/>
+  </g>
+</svg>
